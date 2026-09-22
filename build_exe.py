@@ -30,6 +30,7 @@ def build_windows_exe():
         "--clean",
         "--add-data", f"static{os.pathsep}static",
         "--add-data", f"portal_config.json{os.pathsep}.",
+        "--add-data", f"index.html{os.pathsep}.",
         "--hidden-import", "jinja2",
         "--hidden-import", "werkzeug",
         "--hidden-import", "requests",
